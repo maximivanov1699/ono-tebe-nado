@@ -10,8 +10,9 @@
 .header_menu {
   align-self: center;
   justify-self: start;
-  padding-right: 40px;
+  padding-right: 35px;
   white-space: nowrap;
+  word-spacing: 3px;
 }
 
 .header_links-list {
@@ -39,6 +40,8 @@
   justify-self: center;
   line-height: 24.3px; /* 135% */
   text-underline-offset: 4px;
+  padding-left: 10px;
+  font-style: normal;
 }
 
 .header_address {
@@ -50,7 +53,6 @@
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 757px;
   color: #fff;
   text-transform: uppercase;
   padding: 165px 50px 51px 50px;
@@ -61,7 +63,7 @@
   flex-direction: column;
   font-size: 100px;
   font-weight: 700;
-  gap: 7px;
+  row-gap: 7px;
 }
 
 .aligned-text {
@@ -116,21 +118,15 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
-
-.letter-spacing {
-  letter-spacing: 20px;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
+  padding-top: 125px;
 }
 
 .cover_description-text {
   font-size: 22px;
   line-height: 28px; /* 127.273% */
   padding-bottom: 11px;
-  padding-left: 20px;
+  padding-left: 26px;
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -139,7 +135,6 @@
   flex-shrink: 0;
   border: 1px solid #FFF;
   background-color: transparent;
-  font-family: 'Raleway', sans-serif;
   color: #FFF;
   font-size: 22px;
   font-weight: 500;
@@ -161,10 +156,16 @@
 }
 
 .lots_card-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style-type: none;
+  padding-bottom: 30px;
+}
+
+.lots_card-list-item {
+  width: 334px;
+  flex-grow: 1;
 }
 
 .card {
@@ -215,10 +216,8 @@
 }
 
 .lots_look-more-link {
-  display: block;
-  margin-top: 30px;
-  margin-left: 40px;
-  margin-right: 820px;
+  padding-left: 40px;
+  padding-right: auto;
   text-underline-offset: 4px;
 }
 
@@ -274,7 +273,11 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 88px 50px;
+  margin: 0 50px 88px 42px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer_social-icon {
@@ -291,8 +294,9 @@
 .footer_menu-list {
   list-style-type: none;
   text-align: center;
-  padding-left: 50px;
+  padding-left: 38px;
   text-underline-offset: 4px;
+  line-height: 117%;
 }
 
 .footer_social-link {

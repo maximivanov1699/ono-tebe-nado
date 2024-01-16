@@ -165,6 +165,7 @@
 
 .lots_card-list-item {
   width: 334px;
+  height: 563px;
   flex-grow: 1;
 }
 
@@ -216,8 +217,8 @@
 }
 
 .lots_look-more-link {
-  padding-left: 40px;
-  padding-right: auto;
+  margin-left: 40px;
+  margin-right: auto;
   text-underline-offset: 4px;
 }
 
